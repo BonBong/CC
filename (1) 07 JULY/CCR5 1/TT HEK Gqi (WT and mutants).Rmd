@@ -1,0 +1,35 @@
+---
+title: "TT HEK Gqi (WT and Mutants)"
+author: "Bongani Mveng"
+date: "9 July 2016"
+output: github_document
+---
+```{ccr51, echo = FALSE}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+
+qplot(x = CCR5.species,
+      y = Absorbance,
+      data = ccr51,
+      main = "ELISA results of transiently transfected HEK Gqi cells",
+      xlab = "CCR5 species",
+      ylab = "Absorbance at 450 nm",
+      geom = c("boxplot", "point"))
+      
+
+```
+
+```{r ccr51 Stats, echo = TRUE}
+knit_engines$set
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+
+summary(foo)
+
+
+```
+

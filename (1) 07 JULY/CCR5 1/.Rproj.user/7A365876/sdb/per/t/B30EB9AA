@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"tt\"\nauthor: \"Bongani Mveng\"\ndate: \"9 July 2016\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n\n```{r CCR5 WT and mutant surface expression in HEK Gqi cells}\nsummary(ccr51)\n```\n\n\n\n```{r ccr51, echo=FALSE}\nlibrary(knitr)\nqplot(x = CCR5.species,\n      y = Absorbance,\n      data = ccr51,\n      main = \"ELISA results of transiently transfected HEK Gqi cells\",\n      xlab = \"CCR5 species\",\n      ylab = \"Absorbance at 450 nm\",\n      geom = c(\"boxplot\", \"point\"))\n```\n\n\n",
+    "created" : 1468050655364.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2231452066",
+    "id" : "B30EB9AA",
+    "lastKnownWriteTime" : 1468050822,
+    "last_content_update" : 1468050822606,
+    "path" : "~/HONOURS Phys 2016/CCR5 Research Project/Results/ELISAs/07 JULY/CCR5 1/TT.Rmd",
+    "project_path" : "TT.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

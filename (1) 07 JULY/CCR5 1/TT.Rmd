@@ -1,0 +1,30 @@
+---
+title: "tt"
+author: "Bongani Mveng"
+date: "9 July 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r CCR5 WT and mutant surface expression in HEK Gqi cells}
+summary(ccr51)
+```
+
+
+
+```{r ccr51, echo=FALSE}
+library(knitr)
+qplot(x = CCR5.species,
+      y = Absorbance,
+      data = ccr51,
+      main = "ELISA results of transiently transfected HEK Gqi cells",
+      xlab = "CCR5 species",
+      ylab = "Absorbance at 450 nm",
+      geom = c("boxplot", "point"))
+```
+
+

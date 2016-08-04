@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"ELISA comparing expression in HEK 293 and HEK Gqi cells (FuGENE)\"\nauthor: \"Bongani Mveng\"\ndate: \"21 July 2016\"\noutput: github_document\n---\n\n```{r CCR5 2, echo = FALSE}\nlibrary(tidyr)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(knitr)\n\nCCR52 <- read.csv(\"ELISA comparing CCR5 expression in HEK 293 adnd HEK Gqi cells (FuGENE).csv\")\nCCR52\nccr52 <- tbl_df(CCR52)\nccr52\n\nqplot(x = Transfection,\n      y = HEK.293.absorbance,\n      data = ccr52,\n      geom = \"boxplot\n      main = \"ELISA results showing CCR5 expression HEK 293\")\n\npar(mfrow = c(1, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))\n\nboxplot(ccr52$HEK.293.absorbance~ccr52$Transfection, xlab = \"Transfection\", ylab = \"Absorbance (at 450 nm)\", main = \"HEK 293 absorbances\", ylim = c(0.2, 1.4))\n\nboxplot(ccr52$HEK.Gqi.absorbance~ccr52$Transfection, xlab = \"Transfection\", ylab = \"Absorbance (at 450 nm)\", main = \"HEK Gqi absorbances\")\n \nmtext(\"ELISA results comparing CCR5 expression in HEK 293 and HEK Gqi cells\", outer = TRUE)\n\n```\n\n",
+    "created" : 1469123228790.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "933571445",
+    "id" : "67E9A395",
+    "lastKnownWriteTime" : 1469169043,
+    "last_content_update" : 1469169043895,
+    "path" : "~/HONOURS Phys 2016/CCR5 Research Project/Results/ELISAs/21 JULY/CCR5 2/ELISA comparing CCR5 expression in HEK 293 adnd HEK Gqi cells (FuGENE).Rmd",
+    "project_path" : "ELISA comparing CCR5 expression in HEK 293 adnd HEK Gqi cells (FuGENE).Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

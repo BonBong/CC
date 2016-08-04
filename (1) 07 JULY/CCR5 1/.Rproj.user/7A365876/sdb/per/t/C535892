@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"TT HEK Gqi (WT and Mutants)\"\nauthor: \"Bongani Mveng\"\ndate: \"9 July 2016\"\noutput: github_document\n---\n```{ccr51, echo = FALSE}\nlibrary(tidyr)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(knitr)\n\nqplot(x = CCR5.species,\n      y = Absorbance,\n      data = ccr51,\n      main = \"ELISA results of transiently transfected HEK Gqi cells\",\n      xlab = \"CCR5 species\",\n      ylab = \"Absorbance at 450 nm\",\n      geom = c(\"boxplot\", \"point\"))\n      \n\n```\n\n```{r ccr51 Stats, echo = TRUE}\nknit_engines$set\nlibrary(tidyr)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(knitr)\n\nsummary(foo)\n\n\n```\n\n",
+    "created" : 1468049737368.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3228692625",
+    "id" : "C535892",
+    "lastKnownWriteTime" : 1469146653,
+    "last_content_update" : 1469146653838,
+    "path" : "~/HONOURS Phys 2016/CCR5 Research Project/Results/ELISAs/07 JULY/CCR5 1/TT HEK Gqi (WT and mutants).Rmd",
+    "project_path" : "TT HEK Gqi (WT and mutants).Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

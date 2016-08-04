@@ -5,22 +5,19 @@ date: "21 July 2016"
 output: github_document
 ---
 
-```{r CCR5 2, echo = FALSE}
+```{r CCR5 2, echo = TRUE}
 library(tidyr)
 library(dplyr)
 library(ggplot2)
 library(knitr)
+library(readr)
 
 CCR52 <- read.csv("ELISA comparing CCR5 expression in HEK 293 adnd HEK Gqi cells (FuGENE).csv")
 CCR52
 ccr52 <- tbl_df(CCR52)
 ccr52
 
-qplot(x = Transfection,
-      y = HEK.293.absorbance,
-      data = ccr52,
-      geom = "boxplot
-      main = "ELISA results showing CCR5 expression HEK 293")
+
 
 par(mfrow = c(1, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
 
@@ -29,6 +26,8 @@ boxplot(ccr52$HEK.293.absorbance~ccr52$Transfection, xlab = "Transfection", ylab
 boxplot(ccr52$HEK.Gqi.absorbance~ccr52$Transfection, xlab = "Transfection", ylab = "Absorbance (at 450 nm)", main = "HEK Gqi absorbances")
  
 mtext("ELISA results comparing CCR5 expression in HEK 293 and HEK Gqi cells", outer = TRUE)
+
+# print stats
 
 ```
 

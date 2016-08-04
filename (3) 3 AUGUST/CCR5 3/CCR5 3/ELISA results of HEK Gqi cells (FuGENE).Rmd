@@ -1,0 +1,30 @@
+---
+title: "ELISA results of HEK Gqi cells (FuGENE)"
+author: "Bongani Mveng"
+date: "August 3, 2016"
+output: github_document
+---
+
+```{r CCR5 3, echo = TRUE}
+library(readr)
+ccr5.3 <- read.csv("ELISA results of HEK Gqi cells (FuGENE) 03.08.csv")
+
+
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+# print in data frame format
+
+ccr53 <- tbl_df(ccr5.3)
+ccr53
+
+# plot the data
+
+qplot(x = Transfection,
+      y = Absorbance.at.450nm,
+      data = ccr53,
+      geom = "boxplot",
+      main = "ELISA results of HEK Gqi")
+```
+

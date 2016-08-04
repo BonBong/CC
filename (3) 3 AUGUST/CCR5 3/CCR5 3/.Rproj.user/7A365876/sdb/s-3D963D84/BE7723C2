@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"ELISA results of HEK Gqi cells (FuGENE)\"\nauthor: \"Bongani Mveng\"\ndate: \"August 3, 2016\"\noutput: github_document\n---\n\n```{r CCR5 3, echo = TRUE}\nlibrary(readr)\nccr5.3 <- read.csv(\"ELISA results of HEK Gqi cells (FuGENE) 03.08.csv\")\n\n\nlibrary(tidyr)\nlibrary(dplyr)\nlibrary(ggplot2)\n\n# print in data frame format\n\nccr53 <- tbl_df(ccr5.3)\nccr53\n\n# plot the data\n\nqplot(x = Transfection,\n      y = Absorbance.at.450nm,\n      data = ccr53,\n      geom = \"boxplot\",\n      main = \"ELISA results of HEK Gqi\")\n\n# provide stats\n\n\n```\n\n",
+    "created" : 1470275711594.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3967094541",
+    "id" : "BE7723C2",
+    "lastKnownWriteTime" : 1470277293,
+    "last_content_update" : 1470277388495,
+    "path" : "~/HONOURS Phys 2016/CCR5 Research Project/Results/ELISAs/(3) 3 AUGUST/CCR5 3/CCR5 3/ELISA results of HEK Gqi cells (FuGENE).Rmd",
+    "project_path" : "ELISA results of HEK Gqi cells (FuGENE).Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
